@@ -61,3 +61,13 @@
   background: #005EA5;
   border: #005EA5;
 }
+
+@media screen and (min-width: 720px) {
+      div.buttons_div {
+          margin-bottom: -7.5%;
+        }
+
+      a.link_div {
+        margin-left: 2.5%;
+      }
+}
