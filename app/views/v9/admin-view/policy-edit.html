@@ -113,7 +113,13 @@ Drinking a moderate amount of alcohol will not do you any physical or psychologi
         </span>
       </div>
 
-
+      <script type="text/javascript">
+          function ShowHideDiv() {
+              var chkYes = document.getElementById("change-yes");
+              var dvPassport = document.getElementById("changeinput");
+              changeinput.style.display = chkYes.checked ? "block" : "none";
+          }
+      </script>
       <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -122,7 +128,7 @@ Are there any programme change consultations?      </h2>
     </legend>
     <div class="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="change-yes" name="change-yes" type="radio" value="yes">
+        <input class="govuk-radios__input" id="change-yes" name="change-yes" type="radio" value="yes" onclick="ShowHideDiv()">
         <label class="govuk-label govuk-radios__label" for="change-yes">
           Yes
         </label>
@@ -139,7 +145,7 @@ Are there any programme change consultations?      </h2>
   </fieldset>
 </div>
 
-<div id="change-input" class="govuk-form-group">
+<div id="changeinput" class="govuk-form-group" style="display: none;">
 
         <label class="govuk-label" for="with-hint">
           Displayed for conditions where screening is recommended
