@@ -8,3 +8,17 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 })
+
+
+// Show/hide programme change input on policy-edit pageTitle
+$(document).ready(function() {
+   $('input[type="radio"]').click(function() {
+       if($(this).attr('id') == 'change-yes') {
+            $('#change-input').show();
+       }
+
+       else {
+            $('#change-input').hide();
+       }
+   });
+});

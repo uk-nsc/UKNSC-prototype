@@ -15,25 +15,25 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
+<div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <a href="policy-view" class="govuk-back-link" >Back to policy</a>
-      </br></br>
+      <a href="policy-view" class="govuk-back-link">Back to policy</a>
+      <br><br>
       <span class="govuk-caption-xl">  Edit policy page</span>
       <h1 class="govuk-heading-xl">
         Alcohol Misuse
       </h1>
 
-      <h3>Recommendation status</h3>
+      <h2 class="govuk-heading-m">Recommendation status</h2>
       <p class="recommendation-status">Not Recommended</p>
 
-      <h3>Last review completed</h3>
+      <h2>Last review completed</h2>
       <p class="last-review-date">August 2017</p>
 
       <div class="govuk-form-group">
-        <h3>
+        <h2 class="govuk-heading-m">
           Expected next review start date
-        </h3>
+        </h2>
         <div class="govuk-date-input" id="dob">
           <div class="govuk-date-input__item">
             <div class="govuk-form-group">
@@ -47,10 +47,10 @@
       </div>
 
       <div class="important-downloads">
-        <h3>Supporting documents for downloads</h3>
+        <h2 class="govuk-heading-m">Supporting documents for downloads</h2>
         <p class="govuk-body" style="color: black; margin-bottom: 10px;">Recommendation statement - <a href="#">Recommendation statement - Jan 2017</a></p>
         <a class="govuk-link" href="" style="font-weight: bold; color: red; margin-top: 0px; padding-bottom: 20px;">Delete or replace file</a>
-</br></br></br>
+<br><br><br>
         <p class="govuk-body" style="color: black; margin-bottom: 10px;">Previous evidence review - <a href="#">  Last external review - Review of screening for Alcohol Misuse Jan 2017</a></p>
         <a class="govuk-link" href="" style="font-weight: bold; color: red; margin-top: 0px;">Delete or replace file</a>
 
@@ -73,14 +73,13 @@
 !-->
 
         <div class="govuk-form-group">
-          <h3>Plain English summary</h3>
+          <h2 class="govuk-heading-m">Plain English summary</h2>
           <label class="govuk-label" for="with-hint">
             Displayed under current recommendation
           </label>
           <span id="with-hint-hint" class="govuk-hint">
           </span>
-          <textarea class="govuk-textarea js-character-count" rows="10" aria-describedby="more-detail-hint" id="with-hint" name="with-hint" rows="5" >
-            ##Key findings
+          <textarea class="govuk-textarea js-character-count" rows="10" aria-describedby="more-detail-hint" id="with-hint" name="with-hint">            ##Key findings
 
           -  the most common tests for alcohol misuse are questionnaires which are unsuitable when used
           within a whole population screening programme.
@@ -99,7 +98,7 @@
 
 
       <div class="govuk-form-group">
-        <h3>General Information</h3>
+        <h2 class="govuk-heading-m">General Information</h2>
         <label class="govuk-label" for="with-hint">
           Displayed at the top of the policy page
         </label>
@@ -115,7 +114,50 @@ Drinking a moderate amount of alcohol will not do you any physical or psychologi
       </div>
 
 
-      <div class="stakeholders-list">
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h2 class="govuk-heading-m">
+Are there any programme change consultations?      </h2>
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="change-yes" name="change-yes" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="change-yes">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="change-no" name="change-no" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="change-no">
+          No
+        </label>
+      </div>
+
+    </div>
+
+  </fieldset>
+</div>
+
+<div id="change-input" class="govuk-form-group">
+
+        <label class="govuk-label" for="with-hint">
+          Displayed for conditions where screening is recommended
+        </label>
+        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="10" aria-describedby="more-detail-hint">You can write an introductory sentence with information about how many changes have been considered, and then add bullet points to add more information:
+
+* [programme change consultation](https://www.link-to-consultation) (year)
+* [programme change consultation](https://www.link-to-consultation) (year)
+
+        </textarea>
+        <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+          You can enter up to 2000 characters
+        </span>
+      </div>
+
+
+
+<div class="stakeholders-list">
         <h3>Public Consultees for this Condition</h3>
         <ul class="govuk-list">
           <li><a href="#">Addaction</a></li>
@@ -141,7 +183,7 @@ Drinking a moderate amount of alcohol will not do you any physical or psychologi
           <li><a href="#">Royal College of Physicians of Edinburgh</a></li>
           <li><a href="#">Royal College of Psychiatrists</a></li>
         </ul>
-        <a class="govuk-link" href="add-stakeholder" style="font-size: 20px;">Add a stakeholder to notify</a></br></br></br>
+        <a class="govuk-link" href="add-stakeholder" style="font-size: 20px;">Add a stakeholder to notify</a><br><br><br>
       </div>
     </div>
 
@@ -152,6 +194,5 @@ Drinking a moderate amount of alcohol will not do you any physical or psychologi
 </div>
 
 </div>
-
 
 {% endblock %}
