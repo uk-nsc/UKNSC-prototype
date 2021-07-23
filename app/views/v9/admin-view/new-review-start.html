@@ -71,11 +71,62 @@
 </div>
 !-->
 </br>
+
+<script type="text/javascript">
+    function ShowHideDiv() {
+        var chkYes = document.getElementById("condition");
+        var dvPassport = document.getElementById("products");
+        products.style.display = chkYes.checked ? "block" : "none";
+    }
+    function ShowHideDiv2() {
+        var chkYes = document.getElementById("change");
+        var dvPassport = document.getElementById("products");
+        products.style.display = chkYes.checked ? "none" : "none";
+    }
+    function ShowHideButton() {
+        var chkYes = document.getElementById("change");
+        var dvPassport = document.getElementById("changeButton");
+        changeButton.style.display = chkYes.checked ? "inline-block" : "none";
+        conditionButton.style.display = chkYes.checked ? "none" : "none";
+    }
+    function ShowHideButton2() {
+        var chkYes = document.getElementById("condition");
+        var dvPassport = document.getElementById("changeButton");
+        conditionButton.style.display = chkYes.checked ? "inline-block" : "none";
+        changeButton.style.display = chkYes.checked ? "none" : "none";
+    }
+</script>
 <div class="govuk-form-group">
+<fieldset class="govuk-fieldset">
+<legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+<h2 class="govuk-heading-m">What type of product is this?</h2>
+</legend>
+<div class="govuk-radios">
+<div class="govuk-radios__item">
+  <input class="govuk-radios__input" id="condition" name="change" type="radio" value="condition" onclick="ShowHideDiv();ShowHideButton2()">
+  <label class="govuk-label govuk-radios__label" for="change-yes">
+    Condition recommendation product
+  </label>
+</div>
+<div class="govuk-radios__item">
+  <input class="govuk-radios__input" id="change" name="change" type="radio" value="change" onclick="ShowHideDiv();ShowHideButton()">
+  <label class="govuk-label govuk-radios__label" for="change-no">
+    Programme change product
+  </label>
+</div>
+
+</div>
+
+</fieldset>
+</div>
+
+
+
+<div class="govuk-form-group" id="products" style="display: none;">
   <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-        What type of product is this?
+        What type of condition recommendation product is this?
       </h1>
     </legend>
     <span id="waste-hint" class="govuk-hint">
@@ -117,9 +168,12 @@
 </div>
 
 <p class="govuk-body">By submitting this, the public will be able to see that this condition is in review</p>
-<button class="govuk-button" data-module="govuk-button">
+<button id="conditionButton" class="govuk-button" data-module="govuk-button" style="display: inline-block">
   Save and continue
 </button>
+<a id="changeButton" href="new-review-pv-progmod" role="button" draggable="false" class="govuk-button" data-module="govuk-button" style="display: none;">
+Save and continue
+</a>
     </div>
   </div>
   </form>
