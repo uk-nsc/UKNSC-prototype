@@ -119,6 +119,11 @@ Drinking a moderate amount of alcohol will not do you any physical or psychologi
               var dvPassport = document.getElementById("changeinput");
               changeinput.style.display = chkYes.checked ? "block" : "none";
           }
+          function HideDiv() {
+              var chkYes = document.getElementById("change-no");
+              var dvPassport = document.getElementById("changeinput");
+              changeinput.style.display = chkYes.checked ? "none" : "none";
+          }
       </script>
       <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
@@ -134,7 +139,7 @@ Are there any programme change consultations?      </h2>
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="change-no" name="change-no" type="radio" value="no">
+        <input class="govuk-radios__input" id="change-no" name="change-yes" type="radio" value="no" onclick="HideDiv()">
         <label class="govuk-label govuk-radios__label" for="change-no">
           No
         </label>
