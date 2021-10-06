@@ -7,8 +7,16 @@
 {% endblock %}
 {% block content %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-row" style="
+    /* margin: 0 auto; */
+    margin-right: 0;
+    margin-left: 0;
+">
+  <div class="govuk-grid-column-two-thirds" style="
+    /* width: 75%; */
+    /* max-width: 75%; */
+    /* margin: 0 auto; */
+">
     <a href="homepage" class="govuk-back-link">Back</a>
     <h1 class="govuk-heading-l pink">
     UK NSC recommendations
@@ -187,12 +195,14 @@
 
 
   </div>
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-two-thirds" style="
+    /* width: 90%; */
+">
     <table class="govuk-table">
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="col" style="width: 280px;">Condition</th>
-          <th class="govuk-table__header" scope="col">Target group</th>
+          <th class="govuk-table__header" scope="col" style="/* width: 30%; */">Condition</th>
+          <th class="govuk-table__header" scope="col" style="/* white-space: nowrap; */width: 15vw;">When screening would take place</th>
           <th class="govuk-table__header" scope="col">Screening recommended</th>
           <th class="govuk-table__header" scope="col">Public comments</th>
         </tr>
@@ -280,7 +290,7 @@
 "><strong class="govuk-tag" style="background-color: #28a197;">Programme</strong></div>
 <div class="recommended"><strong class="govuk-tag">Condition</strong>
 </div></td>
-<tr class="govuk-table__row">
+</tr><tr class="govuk-table__row">
   <td class="govuk-table__cell"><a href="prostate-cancer-v1">Prostate Cancer v1</a></td>
   <td class="govuk-table__cell">Adult</td>
   <td class="govuk-table__cell">No</td>
@@ -310,5 +320,4 @@
 
     </div>
 </div>
-
 {% endblock %}
