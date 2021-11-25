@@ -6,21 +6,21 @@
     <link href="/public/stylesheets/uk-nsc-beta.css"  rel="stylesheet" type="text/css">
 {% endblock %}
 {% block content %}
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-          <a href="homepage" class="govuk-back-link">Back</a>
-          <h1 class="govuk-heading-l pink">
-              Subscribe to receive updates on UK NSC consultations
-          </h1>
-          <br>
-  <p class="govuk-body">If you are a health professional or subscribing on behalf of an organisation:</p>
-   <a href="subscribe-organisation"><button class="govuk-button" type="submit">Subscribe as a professional or organisation</button></a>
-  <p class="govuk-body">If you are a member of the public with a personal interest in a screening topic:</p>
-          <a href="subscribe-start-v2"><button class="govuk-button" type="submit">Subscribe as a member of the public</button></a>
-          <p class="govuk-body">
-             We will email you when the UK NSC starts a public consultation on the topic(s) you subscribe to.</p>
-          <p> If you are subscribing as a health professional or organisation, you can have your name or organisation listed as a stakeholder on the page of the topic(s) you subscribe to.
-          </p>
-      </div>
-    </div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <a href="homepage" class="govuk-back-link">Back</a>
+      <h1 class="govuk-heading-l pink">
+          Choose your subscription type
+      </h1>
+
+<p class="govuk-body">Whichever subscription option you choose, we will email you when the UK NSC opens a public consultation on the topic(s) you are interested in, and when the UK NSC publishes their recommendation.</p>
+
+<h2>Representing an organisation</h2><p class="govuk-body">If you or the organisation you represent would like to be considered as a stakeholder for a screening topic, please contact the UK NSC to request a stakeholder subscription. Stakeholders can have their organisation’s name listed on the page of the topic(s) subscribed to.</p>
+<a href="subscribe-organisation"><button class="govuk-button" type="submit">Request stakeholder subscription</button></a>
+<h2>As an individual</h2><p class="govuk-body">If you are a health professional or member of the public with an interest in a screening topic, please subscribe to topic alerts.</p>
+      <a href="subscribe-start-v2"><button class="govuk-button" type="submit">Subscribe to topic alerts</button></a>
+
+
+  </div>
+</div>
 {% endblock %}
